@@ -4,7 +4,7 @@ services:
     container_name: filestash
     image: machines/filestash
     restart: always
-    volume:
+    volumes:
     - /filestash:/app/data/state
     environment:
     - APPLICATION_URL=
